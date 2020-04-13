@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head><title th:text="${title}"></title></head>
+<body>
+<p>
+    Hello
+    <span th:text="${users.getFirstName()}" th:remove="tag"></span>
+    <span th:text="${users.getLastName()}" th:remove="tag"></span>
+</p>
+</body>
+</html>
